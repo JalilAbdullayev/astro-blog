@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 const title: string = "About Me";
 const identity = {
@@ -89,5 +90,6 @@ const skillTransform: string = 'uppercase';
     I have {quantity + 8} pairs of {footwear}
 </p>
 {operatingSystem === "MacOS" ? <p>I am using a Mac.</p> : <p>I am not using a Mac.</p>}
+<Footer/>
 </body>
 </html>
