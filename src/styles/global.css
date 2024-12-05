@@ -60,6 +60,24 @@ h1 {
     }
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag {
+        margin: 0.25em;
+        border: dotted 1px #A1A1A1;
+        border-radius: .5em;
+        padding: .5em 1em;
+        font-size: 1.15em;
+        background-color: #F8FCFD;
+
+        a {
+            color: #00539F;
+        }
+    }
+}
+
 @media screen and (min-width: 636px) {
     .nav-links {
         margin-left: 5em;
