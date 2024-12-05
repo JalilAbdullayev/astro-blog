@@ -2,10 +2,10 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {allPosts} from "../blog.astro";
 import BlogPost from "../../components/BlogPost.astro";
-export const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
+export const uniqueTags = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
 export const getStaticPaths = () => {
     return uniqueTags.map(tag => {
-        const filteredPosts: any = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
+        const filteredPosts: any = allPosts.filter((post: any) => post.data.tags.includes(tag));
         return {
             params: {tag},
             props: {posts: filteredPosts}
@@ -23,6 +23,6 @@ const {posts} = Astro.props;
     </p>
     <ul>
         {posts.map((post: any) =>
-                <BlogPost url={post.url} title={post.frontmatter.title}/>)}
+                <BlogPost url={`/posts/${post.id}/`} title={post.data.title}/>)}
     </ul>
 </BaseLayout>

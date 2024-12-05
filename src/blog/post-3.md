@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MDPostLayout.astro
 title: My Third Blog Post
 author: Jalil Abdullayev
 description: "I had some challenges, but asking in the community really helped!"

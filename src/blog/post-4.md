@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MDPostLayout.astro
 title: My Fourth Blog Post
 author: Jalil Abdullayev
 description: "This post will show up on its own!"

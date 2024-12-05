@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MDPostLayout.astro
 title: My Second Blog Post
 author: Jalil Abdullayev
 description: "After learning some Astro, I couldn't stop!"
